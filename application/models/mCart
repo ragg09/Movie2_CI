@@ -1,0 +1,23 @@
+<?php
+class mCart extends CI_Model {
+	public function __construct(){
+        parent::__construct();
+	}
+
+
+
+function addRatings(){
+$data = array(
+'ratee' => $_POST['ratee'],
+'movie' => $_POST['movie'],
+'rate' => $this->input->post('demo'),
+);
+$this->db->insert('rating', $data);
+}
+
+
+
+
+
+}
+?>

@@ -1,0 +1,159 @@
+
+
+.title{
+	text-align: center;
+}
+
+.add{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.add:hover{
+	background-color: red;
+}
+
+.images{
+	transition: transform .2s;
+}
+
+.images:hover{
+	 transform: scale(1.3);	
+}
+
+.edit_delete{
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+.edilete{
+	height: 50px;
+}
+
+.video{
+	width: 50%;
+	height: 55vh;
+	position: fixed;
+}
+
+.video video{
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+
+.detail{
+	border: 2px solid black;
+	float: right;
+	width: 33%;
+	height: 70vh;
+	margin-right: 2%;
+	text-align: center;
+	overflow-y: scroll;
+}
+
+#story{
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.detail hr{
+	width: 80%;
+	border: 1px solid black;
+}
+
+.back{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.rate{
+	width: 58.5%;
+	height: 15%;
+	border: 1px solid white;
+	position: absolute;
+	bottom: 8%;
+}
+
+/* 
+        Use :not with impossible condition so inputs are only hidden 
+        if pseudo selectors are supported. Otherwise the user would see
+        no inputs and no highlighted stars.
+    */
+    .rating input[type="radio"]:not(:nth-of-type(0)) {
+        /* hide visually */    
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .rating [type="radio"]:not(:nth-of-type(0)) + label {
+        display: none;
+    }
+    
+    label[for]:hover {
+        cursor: pointer;
+    }
+    
+    .rating .stars label:before {
+        content: "★";
+    }
+    
+    .stars label {
+        color: lightgray;
+        font-size: 40px;
+        margin: 10px;
+    }
+    
+    .stars label:hover {
+        text-shadow: 0 0 1px #000;
+    }
+    
+    .rating [type="radio"]:nth-of-type(1):checked ~ .stars label:nth-of-type(-n+1),
+    .rating [type="radio"]:nth-of-type(2):checked ~ .stars label:nth-of-type(-n+2),
+    .rating [type="radio"]:nth-of-type(3):checked ~ .stars label:nth-of-type(-n+3),
+    .rating [type="radio"]:nth-of-type(4):checked ~ .stars label:nth-of-type(-n+4),
+    .rating [type="radio"]:nth-of-type(5):checked ~ .stars label:nth-of-type(-n+5) {
+        color: orange;
+    }
+    
+    .rating [type="radio"]:nth-of-type(1):focus ~ .stars label:nth-of-type(1),
+    .rating [type="radio"]:nth-of-type(2):focus ~ .stars label:nth-of-type(2),
+    .rating [type="radio"]:nth-of-type(3):focus ~ .stars label:nth-of-type(3),
+    .rating [type="radio"]:nth-of-type(4):focus ~ .stars label:nth-of-type(4),
+    .rating [type="radio"]:nth-of-type(5):focus ~ .stars label:nth-of-type(5) {
+        color: darkorange;
+    }
+
+legend{
+	font-size: 15px;
+    height: 5px;
+}
+
+.cart{
+
+    position: absolute;
+    height: 90px;
+    width: 300px;
+    /*border: 1px solid white;*/
+    right: 30px;
+}
+
+.cartbtn{
+    position: absolute;
+    right: 0px;
+    top: 25%;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #C0C0C0;
+}
+
+

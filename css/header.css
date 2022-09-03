@@ -1,0 +1,63 @@
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 70px;
+	padding: 0 0 0 100px;
+	box-sizing: border-box;
+	transition: all 0.5s ease;
+	background-image: -webkit-linear-gradient(left, black, grey);
+	position: relative;
+	overflow: hidden;
+}
+
+nav .hidden {
+    transform: translate3d(0,-100%,0);
+}
+
+nav .channel{
+	position: relative;
+
+}
+
+nav .channel img{
+	height: 70px;
+	width: 70px;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	float: right;
+
+}
+nav ul li{
+	list-style: none;
+	line-height: 70px;
+	text-align: center;
+	
+}
+
+nav ul li a {
+	display: block;
+	padding: 0 30px;
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a.active{
+	background: blue;
+}
+
+nav ul li a:hover{
+	background: white;
+}
+
+.logo{
+	height: 70px;
+}
+
+.icon{
+	height: 70px;
+}
